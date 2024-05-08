@@ -17,12 +17,9 @@ const Stopwatch = () => {
         let timerId;
         if(timerOn){
             timerId = setInterval(() => {
-                setSeconds(seconds+1)
+                setSeconds((prevSec) => prevSec+1)
             }, 1000)
         }
-        // else {
-        //     clearInterval(timerId);
-        // }
         return () => clearInterval(timerId);
     }, [timerOn, seconds]);
 

@@ -20,9 +20,9 @@ const Stopwatch = () => {
                 setSeconds(seconds+1)
             }, 1000)
         }
-        else {
-            clearInterval(timerId);
-        }
+        // else {
+        //     clearInterval(timerId);
+        // }
         return () => clearInterval(timerId);
     }, [timerOn, seconds]);
 

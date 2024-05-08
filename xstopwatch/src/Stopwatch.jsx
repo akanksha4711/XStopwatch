@@ -34,7 +34,7 @@ const Stopwatch = () => {
             marginTop: "15px"
         }}>
             <h1>Stopwatch</h1>
-            <p>Timer: <span>{Math.floor(seconds/60)}:{(seconds%60)>=10 ? (seconds%60) : `0${seconds%60}`}</span></p>
+            <p>Time: <span>{Math.floor(seconds/60)}:{(seconds%60)>=10 ? (seconds%60) : `0${seconds%60}`}</span></p>
             <div>
                 <button onClick={handleStartStop}>{!timerOn ? "Start" : "Stop"}</button>
                 <button onClick={handleReset}>Reset</button>

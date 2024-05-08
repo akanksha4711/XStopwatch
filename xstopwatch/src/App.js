@@ -1,9 +1,10 @@
+import Stopwatch from './Stopwatch';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      Hello world
+      <Stopwatch />
     </div>
   );
 }
